@@ -1,5 +1,5 @@
 {% set name = "smopy" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/smopy-{{ version }}.tar.gz
-  sha256: 578b5bc2502176d210f176ab94e77974f43b32c95cd0768fb817ea2499199592
+  sha256: 7f9313b8bf98cd886d07d7094584a48bf0aca409d78b67e9d348e47b335b799f
 
 build:
   noarch: python
@@ -19,7 +19,6 @@ requirements:
     - pip
     - python >=3.0
   run:
-    - ipython
     - matplotlib-base
     - numpy
     - pillow
