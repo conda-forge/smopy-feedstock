@@ -1,5 +1,6 @@
 {% set name = "smopy" %}
 {% set version = "0.0.8" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -18,6 +19,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools 
   run:
     - matplotlib-base
     - numpy
